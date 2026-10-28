@@ -1,0 +1,152 @@
+/* Tampilan seluruh halaman */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff0f6;
+    color: #633b4d;
+}
+
+/* Bagian judul */
+header {
+    background: linear-gradient(135deg, #ff9ec4, #ffcce0);
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+}
+
+header p {
+    color: white;
+}
+
+/* Menu navigasi */
+nav {
+    background: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d63384;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff69a6;
+}
+
+/* Bagian pembuka */
+.pembuka {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.pembuka h2 {
+    color: #d63384;
+}
+
+/* Judul galeri */
+.judul {
+    text-align: center;
+    color: #d63384;
+    margin: 30px 10px;
+}
+
+/* Susunan galeri */
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Kartu gambar */
+.kartu {
+    background: white;
+    text-align: center;
+    border-radius: 18px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: 0 5px 15px #e9a7c1;
+    transition: 0.3s;
+}
+
+.kartu:hover {
+    transform: translateY(-8px);
+}
+
+/* Gambar pakaian */
+.kartu img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.kartu h3 {
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+.kartu p {
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.kartu span {
+    color: #e75494;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Bagian tentang */
+.tentang {
+    background: #ffd6e7;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 30px;
+}
+
+.tentang h2 {
+    color: #c22570;
+}
+
+/* Bagian bawah */
+footer {
+    background: #d63384;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Tampilan tablet */
+@media (max-width: 900px) {
+    .galeri {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tampilan HP */
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 13px;
+    }
+
+    .galeri {
+        grid-template-columns: 1fr;
+    }
+
+    .kartu img {
+        height: 300px;
+    }
+}
